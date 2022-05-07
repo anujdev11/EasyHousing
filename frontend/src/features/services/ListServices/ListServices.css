@@ -1,0 +1,20 @@
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, 423px);
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.services-list__add-service {
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+  color: black;
+  min-height: 427px;
+}
+
+.services-list__add-service:hover {
+  background-color: #eee;
+}

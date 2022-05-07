@@ -1,0 +1,83 @@
+.service-form {
+  padding: 64px;
+}
+
+.service-form form {
+  padding: 64px 128px;
+  margin: 0 auto;
+  width: 700px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: #E0E0E0;
+  border: 2px solid black;
+  min-height: 100%;
+}
+
+.service-form form > *:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.service-form input[type="file"] {
+  display: none;
+}
+
+.service-form input, .service-file-label {
+  padding: 12px 24px;
+  border: 1px solid black;
+  width: 100%;
+  font-size: 24px;
+  background-color: white;
+  outline: none;
+}
+
+.service-form input[type="text"]:focus {
+  background-color: #EEE;
+}
+
+.service-form input[type="submit"] {
+  background-color: black;
+  color: white;
+  width: fit-content;
+  cursor: pointer;
+}
+
+/* Removes the arrows from input type="number" */
+/* ref: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.service-file-label {
+  display: flex;
+  align-items: center;
+  height: 54px;
+  cursor: pointer;
+}
+
+.service-file-label .icon {
+  font-size: 40px;
+  margin-right: 8px;
+}
+
+.service-file-label > span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.service-form .form-error {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  list-style-type: "- ";
+  width: 100%;
+}
